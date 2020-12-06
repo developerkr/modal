@@ -3,9 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Modal oyna</title>
 </head>
 <body>
-	
+	<button id="btn">
+		Obuna bo'lish
+	</button>
+	<div id="modal" class="modal-block">
+		<div class="box-wrapper">
+			<button id="btnclose">X</button>
+			<h1>Kanalimizga obuna boling!</h1>
+
+		<a href="https://t.me/najottalim" class="channel">
+			<img src="img/telegram.svg" alt="tg" width="20" height="20">
+			<p>Telegram</p>
+		</a>
+
+		<a href="https://youtube.com/najottalim" class="channel">
+			<img src="img/youtube.ico" alt="tg" width="20" height="20">
+			<p>You tube</p>
+		</a>
+
+		<a href="https://instagram.com/najottalim" class="channel">
+			<img src="img/instagram.ico" alt="tg" width="20" height="20">
+			<p>Instagram</p>
+		</a>
+		</div>
+	</div>
+
+	<script>
+		let modal = document.querySelector('#modal')
+
+		btn.onclick= () =>{
+			modal.classList.remove('modal-block')
+			modal.classList.add('modal')
+		}
+        btnclose.onclick= () =>{
+        	modal.classList.remove('modal')
+			modal.classList.add('modal-block')
+        }
+
+	</script>
 </body>
 </html>
